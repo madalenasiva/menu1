@@ -1,0 +1,96 @@
+
+*{
+    margin: 0px;
+    padding: 2px;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+#navegaçao-principal{
+     position: relative;
+     font-family: monospace;
+     float: right;
+     width: 100%;
+     text-align: right;
+}
+#menu-principal {
+    list-style: nome;
+    padding-left: 24%;
+    float:right;
+}
+
+#menu-principal li{
+    background-color: rgb(38, 17, 226);
+    display: block;
+    float:left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    text-align:right;
+    bottom: 0%;
+    top: 0%;
+    right: 0%;
+    margin: auto;
+    
+}
+#menu-principal li a{
+    color: white;
+    text-decoration: nome;
+    text-align: right;
+    float: left;
+}
+.dropdown {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    box-shadow: opx 8px 16px 0px black;
+    text-align: left;
+
+}
+.dropdown li{
+    clear: both;
+    width: 100%;
+}
+#menu-principal li:hover,
+#menu-principal li:focus-within {
+    background-color: rgb(87, 79, 79);
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.4s;
+}
+#menu-principal li a:hover{
+    color: 
+    rgb(17, 16, 16);
+}
+/*controla a exibiçõ=ao do dropdown*/
+#menu-principal li:hover>ul,
+#menu-principal li:focus-within>ul,
+.dropdown ul:hover,
+.dropdown ul:focus{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    float: left;
+}
+.quadrada{
+    background-image:linear-gradient( to bottom, rgb(187, 164, 164), rgb(68, 68, 197));
+    border: 20px;
+    width: 1500px;
+    height: 600px;
+    
+}
+.texto {
+    border: 20px;
+    right: 1200;
+    height: 200;
+    background-color: red;
+
+}
